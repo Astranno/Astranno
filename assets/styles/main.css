@@ -1,0 +1,508 @@
+body{
+  font-family: open-sans, sans-serif;
+}
+
+input, textarea, button{
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+.header{
+  padding: 40px;
+  height: calc(100vh - 80px);
+  background-color: #5bb9e9;
+  background-size: cover;
+  clear: both;
+}
+
+.headLogo{
+  height: 70px;
+  float: left;
+}
+
+.nav{
+  float: right;
+  margin-top: 28px;
+}
+
+.nav li{
+  display: inline-block;
+  padding-left: 50px;
+}
+.nav li a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.nav li a:hover{
+  text-decoration: underline;
+}
+
+.nav li:first-child{
+  padding-left: 0;
+}
+
+.headerCalling{
+  font-family: Lato, open-sans, sans-serif;
+  font-size: 90px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: white;
+  margin-top: calc(50vh - 200px);
+  text-align: center;
+}
+
+.headDiv{
+  border: 1px solid white;
+  margin: 40px;
+}
+
+.subHeaderCalling{
+  font-family: Lato, open-sans, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+.section-title{
+  font-family: Lato, open-sans, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  letter-spacing: 6px;
+}
+
+#applications{
+  background-color: white;
+}
+
+#applications .section-title{
+  color: #555;
+  padding-bottom: 20px;
+}
+
+.app{
+  padding-bottom: 20px;
+}
+
+.app:last-child{
+  padding-bottom: 60px;
+}
+
+.app img{
+  margin-left: -10px;
+}
+
+.app h1{
+  color: #333;
+  font-weight: 300;
+  font-size: 24px;
+  padding-bottom: 20px;
+  margin-left: -20px;
+}
+
+.app p{
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.app-btn{
+  font-size: 15px;
+  padding: 15px;
+  background-color: #5bb9e9;
+  color: white;
+  -webkit-transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.app-btn:hover{
+  background-color: #2f84af;
+}
+
+.newsletter{
+  margin-top: 30px;
+  color: white;
+  padding: 80px;
+  background-color: #5bb9e9;
+  font-size: 16px;
+}
+
+.newsletter h1{
+  font-weight: 300;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.newsletter input{
+  margin-top: 10px;
+  color: #999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0;
+
+}
+
+.newsletter button{
+  background-color: #2f84af;
+  border: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.newsletter button:hover{
+  background-color: #3e99c7;
+}
+
+#team{
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
+#team .section-title{
+  color: #555;
+  padding-bottom: 0px;
+}
+
+#team .team-image .team-member img{
+  height: 300px; 
+  -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+}
+
+
+
+#team .team-image .team-member span{
+  color: #333;
+  font-size: 18px;
+  position: relative;
+  bottom: 15px;
+}
+
+#testimonials{
+  background-color: #5bb9e9;
+  padding-bottom: 60px;
+  color: white;
+}
+
+#testimonials .section-title{
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.testimonial{
+  background-color: white;
+  color: #555;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.testimonial h1{
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.testimonial p{
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 12px;
+}
+
+.testimonial h2{
+  font-size: 18px;
+}
+
+#contact{
+  background-color: #ffffff;
+  padding-bottom: 60px;
+}
+
+#contact .section-title{
+  color: #555;
+  padding-bottom: 0px;
+}
+
+#contact form input{
+  color: #999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  border: 1px solid #5bb9e9;
+  width: calc(100% - 42px);
+  margin-bottom: 20px;
+  -webkit-transition: border 0.25s ease-in-out;
+    -moz-transition: border 0.25s ease-in-out;
+    transition: border 0.25s ease-in-out;
+    
+}
+
+#contact form textarea{
+  color: #999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  height: 80px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #5bb9e9;
+  width: calc(100% - 42px);
+  margin-bottom: 20px;
+  max-width: calc(100% - 42px);
+  -webkit-transition: border 0.25s ease-in-out;
+    -moz-transition: border 0.25s ease-in-out;
+    transition: border 0.25s ease-in-out;
+}
+
+#contact form input:focus, #contact form textarea:focus{
+  border: 1px solid #ccc;
+}
+
+#contact form button{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px;
+  background-color: #5bb9e9;
+  color: white;
+  width: 275px;
+  border: none;
+  margin-left: 10px;
+}
+
+#contact form button:hover{
+  background-color: #2f84af;
+  -webkit-transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.error{
+  color: #e74c3c;
+  padding-bottom: 10px;
+}
+
+.note{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color #333;
+  text-align: center;
+}
+
+.note i{
+  color: #e74c3c;
+}
+
+.note p a{
+  text-decoration: none;
+  color: #5bb9e9;
+}
+
+#footer{
+  background-color: #5bb9e9;
+  color: white;
+  padding: 20px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+@media(max-width: 1000px){
+  .headerCalling{
+    font-size: 75px;
+  }
+  
+  .subHeaderCalling{
+    font-size: 20px;
+  }
+  
+  .section-title{
+    font-size: 30px; 
+  }
+  
+  .app{
+    padding-left: 50px;
+  }
+  
+  .app h1, .newsletter h1{
+    font-size: 20px;
+  }
+  
+    .app p, .newsletter p, .app-btn{
+    font-size: 14px;
+  }
+  
+  .newsletter{
+    padding: 65px;
+  }
+  
+  .newsletter h1{
+    margin-left: -10px;
+  }
+  
+  .newsletter input{
+    width: 70%;
+    margin-left: -10px;
+  }
+  
+  #team .team-image .team-member span{
+    display: none;
+  }
+  
+  #team .team-image .team-member img{
+    height: 230px;  
+  }
+}
+
+@media(max-width: 800px){
+  .headerCalling{
+    padding-top: 120px;
+    font-size: 50px;
+  }
+  
+  .headDiv{
+    display: none;
+  }
+  
+  .subHeaderCalling{
+    display: none;
+  }
+  
+  .section-title{
+    font-size: 25px; 
+  }
+  
+  .app{
+    padding-bottom: 25px;
+  }
+  
+  .app h1{
+    padding-left: 0;
+    margin-left: -25px;
+  }
+  
+  .app img{
+    display: none;
+  }
+  
+  .app p{
+    padding-left: 0;
+    margin-left: -15px;
+  }
+  
+  .app-btn{
+    margin-left: -15px;
+  }
+  
+  #team .team-image .team-member img{
+    height: 190px;  
+  }
+  
+  #contact form button{
+    width: calc(100% - 20px);
+  }
+}
+
+@media(max-width: 750px){
+  #team .team-image .team-member img{
+    height: 300px;  
+  }
+}
+
+@media(max-width: 700px){
+  .nav{
+    margin-top: 0;
+  }
+  
+  .nav li{
+    display: block;
+    text-align: right;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  
+  .nav li::before {
+    content: attr(data-text);
+  }
+  
+  .nav li a{
+    font-size: 15px;
+  }
+  
+  .headerCalling{
+    padding-top: 40px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+  
+  .newsletter h1{
+    font-size: 22px;
+  }
+
+  .newsletter p{
+    display: none;
+  }
+  
+  .newsletter input{
+    width: 90%;
+    margin-top: 10px;
+  }
+  
+  .newsletter button{
+    margin-top: 20px;
+    width: 60%;
+  }
+  
+  #team .team-image .team-member img{
+    height: 300px;  
+  }
+}
+
+@media(max-width: 450px){
+  .headerCalling{
+    padding-top: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+  #team .team-image .team-member img{
+    height: 170px;  
+  }
+}

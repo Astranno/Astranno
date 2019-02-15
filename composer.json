@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mailgun/mailgun-php": "^1.8",
+        "drewm/mailchimp-api": "^2.0"
+    }
+}
