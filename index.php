@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
   	    'subject' => $_POST['subject'] . " - From Astranno.com",
   	    'text'    => $_POST["message"]
   	));
-  	header("Location: https://www.astranno.com/thanks.php?type=contact");
+  	header("Location: https://www.astranno.com/thanks.html");
   }
 }
 
