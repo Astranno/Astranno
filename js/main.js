@@ -6,7 +6,7 @@ $(document).ready(function () {
         ease: Linear.easeNone
     })
 
-    var sceneStart = new ScrollMagic.Scene({duration: 500, offset: 0})
+    var sceneStart = new ScrollMagic.Scene({duration: 2000, offset: 0})
                         .setTween(tweenStart)
 						.setPin("#starting-page");
 
