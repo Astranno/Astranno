@@ -18,7 +18,7 @@ $(document).ready(function () {
         $(window).scroll(function () {
             if ($(window).scrollTop() >= button) {
                 $("#img-logo-start").css("display","none");
-                $("body").css("background-color", "whitesmoke")
+                $("body").css("background-color", "#ffffff")
             } else {
                 $("#img-logo-start").css("display","inline");
                 $("body").css("background-color", "gray")
