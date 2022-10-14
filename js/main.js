@@ -11,4 +11,18 @@ $(document).ready(function () {
 						.setPin("#starting-page");
 
     controller.addScene(sceneStart)
+
+    var button = $(window).height(); //get offset of second div
+    console.log(button)
+    $(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= button) {
+                $("#img-logo-start").css("display","none");
+                $("body").css("background-color", "whitesmoke")
+            } else {
+                $("#img-logo-start").css("display","inline");
+                $("body").css("background-color", "gray")
+            }
+        });
+    });
 })
