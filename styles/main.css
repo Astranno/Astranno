@@ -1,6 +1,6 @@
 body {
     font-family: open-sans, sans-serif;
-    background-color: gray;
+    background-color: #5bb9e9;
 }
 
 h1 {
@@ -9,12 +9,18 @@ h1 {
 }
 
 .fullscreen-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex {
     display: flex;
+}
+
+.flex-centered {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
 }
 
 .img-container {
