@@ -12,6 +12,12 @@ h1 {
     font-size: 4rem;
 }
 
+#starting-page {
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+}
+
 /* #name-start {
     position: relative;
 }
@@ -43,10 +49,13 @@ h1 {
     display: flex;
 }
 
+.flex-column {
+    flex-direction: column;
+    align-items: center;
+}
+
 .flex-centered {
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .img-container {
@@ -58,4 +67,10 @@ h1 {
 #img-logo-start {
     max-height: 50vh;
     max-width: 65vw;
+}
+
+span {
+    transition: 0.4s all ease-out;
+	-moz-transition: 0.4s all ease-out;
+	-webkit-transition: 0.4s all ease-out;
 }
