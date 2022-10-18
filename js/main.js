@@ -3,12 +3,13 @@ $(document).ready(function () {
 
     var tweenStart = new TweenMax.to('#img-logo-start', 4, {
         scale: 35.00,
-        ease: Linear.easeNone
+        ease: Sine.easeIn
     })
 
-    var sceneStart = new ScrollMagic.Scene({duration: 2000, offset: 0})
+    var sceneStart = new ScrollMagic.Scene({duration: 1000, offset: 0})
                         .setTween(tweenStart)
 						.setPin("#starting-page");
+                        // .addIndicators()
 
     controller.addScene(sceneStart)
 
