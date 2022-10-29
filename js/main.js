@@ -20,11 +20,11 @@ $(document).ready(function () {
             if ($(window).scrollTop() >= (screenHeight/2)) {
                 $("#img-logo-start").css("display","none");
                 $("#name-start").css("display","none");
-                $("body").css("background-color", "#ffffff");
+                $("#starting-page").css("background-color", "#ffffff");
             } else {
                 $("#img-logo-start").css("display","inline");
                 $("#name-start").css("display","inline");
-                $("body").css("background-color", "#5bb9e9")
+                $("#starting-page").css("background-color", "#5bb9e9")
             }
 
             // if ($(window).scrollTop() >= (screenHight + 1000)) {
