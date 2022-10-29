@@ -90,3 +90,9 @@ span {
 	-moz-transition: 0.4s all ease-out;
 	-webkit-transition: 0.4s all ease-out;
 }
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+}
