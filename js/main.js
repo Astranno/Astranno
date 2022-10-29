@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     var sceneStart = new ScrollMagic.Scene({duration: (screenHeight/2), offset: 0})
                         .setTween(tweenStart)
-						// .setPin("#starting-page")
+						.setPin("#starting-page")
                         .addIndicators();
 
     var tweenAboutStart = new TimelineMax()
@@ -39,7 +39,6 @@ $(document).ready(function () {
                 $("#img-logo-start").css("display","none");
                 $("#name-start").css("display","none");
                 $("body").css("background-color", "#ffffff");
-                $("#starting-page").removeClass(".fullscreen-container")
             } else {
                 $("#img-logo-start").css("display","inline");
                 $("#name-start").css("display","inline");
