@@ -12,8 +12,8 @@ h1 {
     font-size: 4rem;
 }
 
-#starting-page {
-    /* position: fixed; */
+h2 {
+    font-size: 3rem;
 }
 
 /* #name-start {
@@ -38,9 +38,16 @@ h1 {
     height: 100%;
 } */
 
-.fullscreen-container {
-    height: 100vh;
+.text-centered {
+    text-align: center;
+}
+
+.fullwidth-container {
     width: 100vw;
+}
+
+.fullheight-container {
+    height: 100vh;
 }
 
 .flex {

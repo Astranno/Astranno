@@ -13,25 +13,7 @@ $(document).ready(function () {
 						.setPin("#starting-page")
                         .addIndicators();
 
-    var tweenAboutStart = new TimelineMax()
-                        .fromTo("#our-thing span", 1, {opacity: "100%"}, {opacity: "0%", ease: Linear.easeNone})
-
-    var sceneAboutStart = new ScrollMagic.Scene({triggerElement:'#about-us', duration: 100, offset: 0})
-                        .setTween(tweenAboutStart)
-						.setPin("#about-us")
-                        .addIndicators();
-
-    var tweenAboutMove = new TimelineMax()
-                        .fromTo("#our-thing", 1, {x: "0%"}, {x:"-50%"})
-
-    var sceneAboutMove = new ScrollMagic.Scene({triggerElement:'#about-us', duration: 100, offset: 100})
-                        .setTween(tweenAboutMove)
-						.setPin("#about-us")
-                        .addIndicators();
-
     controller.addScene(sceneStart)
-    controller.addScene(sceneAboutStart)
-    controller.addScene(sceneAboutMove)
 
     $(function () {
         $(window).scroll(function () {
