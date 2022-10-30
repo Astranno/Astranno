@@ -127,6 +127,7 @@ span {
 @media screen and (max-width: 515px) {
     #js-our-thing {
         font-size: 7vh;
+        font-weight: 300;
     }
 
 @media screen and (max-width: 410px) {
