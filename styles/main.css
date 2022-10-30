@@ -17,7 +17,11 @@ h1 {
 }
 
 h2 {
+    font-family: Lato, open-sans, sans-serif;
+    font-weight: 200;
     font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 #name-start {
@@ -81,16 +85,37 @@ h2 {
     justify-content: center;
 }
 
+.fixed {
+    position: fixed;
+}
+
+.static {
+    position: static;
+}
+
 #img-logo-start {
     max-height: 50vh;
     max-width: 65vw;
 }
 
 #js-holder-about {
-    position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
     opacity: 0%;
+}
+
+#js-our-thing {
+    font-size: 10vh;
+    margin: 0;
+}
+
+#about-container {
+    z-index: 5;
+    background-color: #5bb9e9;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -1px 20px rgb(0, 0, 0), 0 -2px 10px rgba(0, 0, 0, 0.10);
 }
 
 span {
@@ -99,8 +124,18 @@ span {
 	-webkit-transition: 0.4s all ease-out;
 }
 
-@media screen and (max-width: 425px) {
-    h1 {
-        font-size: 3rem;
+@media screen and (max-width: 515px) {
+    #js-our-thing {
+        font-size: 7vh;
     }
+
+@media screen and (max-width: 410px) {
+    h1 {
+        font-size: 12.5vw;
+    }
+    #js-our-thing {
+        font-size: 5vh;
+    }
+}
+
 }
