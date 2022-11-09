@@ -1,5 +1,6 @@
 var screenHeight = $(window).height();
 var animationLength = Math.max(screenHeight, "800")
+var logoHidden = false;
 
 // Here is where the animation on scroll will be kept
 function animation() {
@@ -60,22 +61,20 @@ $(document).ready(function () {
                     $("#js-holder-about").css("opacity", "100%");
                     position = 2
                 }
-            } else if ($(window).scrollTop() < (animationLength/2)) {
-                if (position != 1) {
-                    $("#img-logo-start").css("display","inline");
-                    $("#name-start").css("display","inline");
-                    $("body").css("background-color", "#5bb9e9")
-                    $("#js-holder-about").addClass("hidden")
-                    position = 1
-                }
-            } else if (($(window).scrollTop() >= (animationLength/2)) && ($(window).scrollTop() < (3*animationLength/2))) {
-                if (position != 0) {
+            }
+            
+            if (($(window).scrollTop() < (animationLength/2)) && logoHidden) {
+                $("#img-logo-start").css("display","inline");
+                $("#name-start").css("display","inline");
+                $("body").css("background-color", "#5bb9e9")
+                $("#js-holder-about").addClass("hidden")
+                logoHidden = false
+            } else if (($(window).scrollTop() >= (animationLength/2)) && !logoHidden) {
                     $("#img-logo-start").css("display","none");
                     $("#name-start").css("display","none");
                     $("body").css("background-color", "#ffffff");
                     $("#js-holder-about").removeClass('hidden').addClass('fullheight-container')
-                    position = 0
-                }
+                    logoHidden = true
             }
 
 
