@@ -50,26 +50,32 @@ $(document).ready(function () {
     var position = 0;
     $(function () {
         $(window).scroll(function () {
-            if (($(window).scrollTop() >= (3*animationLength/2)) && position < 3) {
-                $("#js-holder-about").addClass("hidden")
-                position = 3
-            } else if (($(window).scrollTop() >= (5*animationLength/6)) && position < 2) {
-                $("#js-holder-about").css("opacity", "100%");
-                console.log("Hello")
-                console.log(position)
-                position = 2
-            } else if (($(window).scrollTop() < (animationLength/2)) && position < 1) {
-                $("#img-logo-start").css("display","inline");
-                $("#name-start").css("display","inline");
-                $("body").css("background-color", "#5bb9e9")
-                $("#js-holder-about").addClass("hidden")
-                position = 1
-            } else if (($(window).scrollTop() >= (animationLength/2)) && ($(window).scrollTop() < (3*animationLength/2)) && position != 0) {
-                $("#img-logo-start").css("display","none");
-                $("#name-start").css("display","none");
-                $("body").css("background-color", "#ffffff");
-                $("#js-holder-about").removeClass('hidden').addClass('fullheight-container')
-                position = 0
+            if ($(window).scrollTop() >= (3*animationLength/2)) {
+                if (position != 3) {
+                    // $("#js-holder-about").addClass("hidden")
+                    position = 3
+                }
+            } else if ($(window).scrollTop() >= (5*animationLength/6)) {
+                if (position != 2) {
+                    $("#js-holder-about").css("opacity", "100%");
+                    position = 2
+                }
+            } else if ($(window).scrollTop() < (animationLength/2)) {
+                if (position != 1) {
+                    $("#img-logo-start").css("display","inline");
+                    $("#name-start").css("display","inline");
+                    $("body").css("background-color", "#5bb9e9")
+                    $("#js-holder-about").addClass("hidden")
+                    position = 1
+                }
+            } else if (($(window).scrollTop() >= (animationLength/2)) && ($(window).scrollTop() < (3*animationLength/2))) {
+                if (position != 0) {
+                    $("#img-logo-start").css("display","none");
+                    $("#name-start").css("display","none");
+                    $("body").css("background-color", "#ffffff");
+                    $("#js-holder-about").removeClass('hidden').addClass('fullheight-container')
+                    position = 0
+                }
             }
 
 
