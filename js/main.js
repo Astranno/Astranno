@@ -13,8 +13,8 @@ function animation() {
 
     var sceneStart = new ScrollMagic.Scene({duration: (animationLength/2), offset: 0})
                         .setTween(tweenStart)
-						.setPin("#starting-page")
-                        .addIndicators();
+						.setPin("#starting-page");
+                        // .addIndicators();
 
     var tweenAboutTitleIn = new TweenMax.to('#js-holder-about', 4, {
         opacity: '100%',
@@ -27,16 +27,11 @@ function animation() {
     })
 
     var sceneAboutTitleIn = new ScrollMagic.Scene({duration: (animationLength/3), offset: (animationLength/2)})
-                        .setTween(tweenAboutTitleIn)
-                        .addIndicators();
-
-    var sceneAboutTitleOut = new ScrollMagic.Scene({duration: (animationLength/3), offset: (5*animationLength/6)})
-                        .setTween(tweenAboutTitleOut)
-                        .addIndicators();
+                        .setTween(tweenAboutTitleIn);
+                        // .addIndicators();
 
     controller.addScene(sceneStart)
     controller.addScene(sceneAboutTitleIn)
-    // controller.addScene(sceneAboutTitleOut)
 }
 
 $(document).ready(function () {
